@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK>;
+            label = "NEW_MACRO";
+            tap-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
