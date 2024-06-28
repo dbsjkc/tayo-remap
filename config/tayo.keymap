@@ -14,9 +14,9 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&mt LGUI CAPSLOCK>;
             label = "NEW_MACRO";
-            tap-ms = <50>;
+            tap-ms = <100>;
         };
     };
 
