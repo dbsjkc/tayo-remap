@@ -11,11 +11,11 @@
 
 / {
     macros {
-        new_macro: new_macro {
+        CAPSLOCK: CAPSLOCK {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mt LGUI CAPSLOCK>;
-            label = "NEW_MACRO";
+            bindings = <&kp CAPSLOCK>;
+            label = "CAPSLOCK";
             tap-ms = <100>;
         };
     };
